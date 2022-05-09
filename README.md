@@ -1,2 +1,0 @@
-# corejavashalu
-java programs
