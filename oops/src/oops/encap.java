@@ -1,5 +1,7 @@
+/**
+ * 
+ */
 package oops;
-
 /**
  * @author Shalini
  *
@@ -49,6 +51,7 @@ class cricketer{
 		this.runs=runs;
 	}
 	void getData() {
+	
 		System.out.println(name);
 		System.out.println(age);
 		System.out.println(matches);
@@ -61,11 +64,12 @@ class cricketer{
    void bowl() {
 	System.out.println("CRICKETER IS BOWLING");
    }
-}
-public class encap1 {
-
+	}
+public class encap {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		
 		cricketer c1 = new cricketer();
 		cricketer c2 = new cricketer();
 		
@@ -73,13 +77,12 @@ public class encap1 {
 		c2.setData("GANGULY",35, 60, 800);
 		
 		c1.getData();
-		c2.getData();
-		System.out.println("-------------------");
-		
 		c1.bat();
 		c1.bowl();
-		
+		System.out.println("-------------------");
+		c2.getData();
 		c2.bat();
 		c2.bowl();
-		}
+	}
+
 }

@@ -1,6 +1,4 @@
-
 package oops;
-
 /**
  * @author Shalini
  *
@@ -15,7 +13,7 @@ class car3{
 		this("MINICOOPER");
 }
 	public car3(String name) {
-		this("BALENO", 100000);
+		this("BALENO", 2000000);
 		this.name=name;
 	}
 	public car3(String name, int cost) {
@@ -62,5 +60,4 @@ public class construct1 {
 //			System.out.println("-------------");
 //			c5.getData();
 	}
-
 }

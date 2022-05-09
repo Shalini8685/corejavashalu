@@ -2,7 +2,6 @@
  * 
  */
 package oops;
-
 /**
  * @author Shalini
  *
@@ -19,7 +18,6 @@ class animal{
 		System.out.println("CAN RUN");
 	}
 }
-
 class deer extends animal{
 	@Override
 	void run() {
@@ -29,7 +27,6 @@ class deer extends animal{
 		System.out.println("DEER BREATHS HEAVILY");
 	}
 }
-
 class lion extends animal{
 	@Override
 	void run() {
@@ -39,7 +36,6 @@ class lion extends animal{
 		System.out.println("LION ROARS LOUD");
 	}
 }
-
 class monkey extends animal{
 	@Override
 	void run() {
@@ -49,7 +45,6 @@ class monkey extends animal{
 		System.out.println("MONKEY JUMPS HIGH");
 	}
 }
-
 class forest{
 	void allow(animal ref){
 	ref.eat();
@@ -58,7 +53,6 @@ class forest{
 	}
 }
 public class poly2 {
-
 	public static void main(String[] args) {
 		deer d = new deer();
 		lion l = new lion();

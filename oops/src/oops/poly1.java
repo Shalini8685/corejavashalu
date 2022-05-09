@@ -2,13 +2,12 @@
  * 
  */
 package oops;
-
 /**
  * @author Shalini
  *
  */
 //POLYMORPHISM WITHOUT REPETITION
-class animal{
+class animal1{
 	void eat() {
 		System.out.println("CAN EAT");
 	}
@@ -20,7 +19,7 @@ class animal{
 	}
 }
 
-class deer extends animal{
+class deer1 extends animal1{
 	@Override
 	void run() {
 		System.out.println("DEER RUNS VERY FAST");
@@ -29,8 +28,7 @@ class deer extends animal{
 		System.out.println("DEER BREATHS HEAVILY");
 	}
 }
-
-class lion extends animal{
+class lion1 extends animal1{
 	@Override
 	void run() {
 		System.out.println("LION RUNS FAST");
@@ -39,8 +37,7 @@ class lion extends animal{
 		System.out.println("LION ROARS LOUD");
 	}
 }
-
-class monkey extends animal{
+class monkey1 extends animal1{
 	@Override
 	void run() {
 		System.out.println("MONKEY RUNS SLOW");
@@ -49,29 +46,33 @@ class monkey extends animal{
 		System.out.println("MONKEY JUMPS HIGH");
 	}
 }
-
 public class poly1 {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		deer d = new deer();
-		lion l = new lion();
-		monkey m = new monkey();
+		deer1 d = new deer1();
+		lion1 l = new lion1();
+		monkey1 m = new monkey1();
 		
-		animal ref;
-		
+		animal1 ref;
+		ref = d; 
+		ref.eat();
+		ref.sleep();
+		ref.run();
 		d.breath();
-		System.out.println();
-		
-		f.allow(l);
+		System.out.println("-------------------");
+		ref = l;
+		ref.eat();
+		ref.sleep();
+		ref.run();
 		l.roar();
-		System.out.println();
-		
-		f.allow(m);
+		System.out.println("-------------------");
+		ref = m;
+		ref.eat();
+		ref.sleep();
+		ref.run();
 		m.jump();
+		
 	}
 
 }
